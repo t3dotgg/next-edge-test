@@ -3,11 +3,6 @@ import type { NextPage } from "next";
 const Home: NextPage = () => {
   return (
     <div style={{ padding: "4rem" }}>
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
-        style={{ width: "64px", marginTop: "2rem" }}
-        alt="svelte logo"
-      />
       <h1>Theo&apos;s Crappy Vercel Runtimes Benchmark</h1>
       <h2>(Check console and refresh for timing history)</h2>
       <h2>
