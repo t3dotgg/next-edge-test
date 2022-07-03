@@ -27,9 +27,7 @@ const Home: NextPage = () => {
       const currentTime = new Date(); // round trip time
       const fullTime = currentTime - window.performance.timing.requestStart;
       console.log(\`THEO REPORTS\`, fullTime);
-      setTimeout(function() {
-        document.getElementById(\`overrideme\`).innerHTML = fullTime;
-      }, 1000);
+      document.getElementById(\`overrideme\`).innerHTML = fullTime;
         `}
       </script>
     </div>
@@ -40,4 +38,8 @@ export default Home;
 
 export const getServerSideProps = () => {
   return { props: { message: new Date().toString() } };
+};
+
+export const config = {
+  unstable_runtimeJS: false,
 };
