@@ -13,4 +13,5 @@ export const getServerSideProps = () => {
 
 export const config = {
   unstable_runtimeJS: false,
+  runtime: "experimental-edge",
 };
