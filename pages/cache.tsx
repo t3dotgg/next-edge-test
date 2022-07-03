@@ -11,11 +11,6 @@ const Home: NextPage = () => {
       />
       <h1>Theo&apos;s Crappy Benchmark (NextJS On Vercel CDN Cache)</h1>
       <h2>
-        Next hates my inline script so times will show up ~1000ms after
-        they&apos;re calculated
-      </h2>
-
-      <h2>
         <span>
           Full request to render time (according to Theo):{" "}
           <span id="overrideme" />
@@ -27,9 +22,7 @@ const Home: NextPage = () => {
       const currentTime = new Date(); // round trip time
       const fullTime = currentTime - window.performance.timing.requestStart;
       console.log(\`THEO REPORTS\`, fullTime);
-      setTimeout(function() {
-        document.getElementById(\`overrideme\`).innerHTML = fullTime;
-      }, 1000);
+      document.getElementById(\`overrideme\`).innerHTML = fullTime;
         `}
       </script>
     </div>

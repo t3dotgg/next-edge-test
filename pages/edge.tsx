@@ -10,10 +10,6 @@ const Home: NextPage = () => {
         alt="svelte logo"
       />
       <h1>Theo&apos;s Crappy Benchmark (NextJS On Vercel Edge)</h1>
-      <h2>
-        Next hates my inline script so times will show up ~1000ms after
-        they&apos;re calculated
-      </h2>
 
       <h2>
         <span>
