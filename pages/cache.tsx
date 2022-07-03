@@ -41,3 +41,7 @@ export default Home;
 export const getStaticProps = () => {
   return { props: { message: new Date().toString() } };
 };
+
+export const config = {
+  unstable_runtimeJS: false,
+};

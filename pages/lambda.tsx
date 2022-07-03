@@ -44,4 +44,5 @@ export const getServerSideProps = () => {
 
 export const config = {
   runtime: "nodejs",
+  unstable_runtimeJS: false,
 };
