@@ -38,4 +38,6 @@ const Home: NextPage = () => {
 
 export default Home;
 
-export const getServerSideProps = () => {};
+export const getServerSideProps = () => {
+  return { props: { message: new Date().toString() } };
+};
