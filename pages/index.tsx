@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 const Home: NextPage = () => {
   return (
     <div style={{ padding: "4rem" }}>
-      <h1>Theo&apos;s Crappy Vercel Runtimes Benchmark</h1>
+      <h1>Theo&apos;s Crappy Web Deployment Runtimes Benchmarks</h1>
       <h2>(Check console and refresh for timing history)</h2>
       <h2>
         <a style={{ color: "blue", textDecoration: "underline" }} href="/edge">
