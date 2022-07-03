@@ -19,8 +19,11 @@ export const Benchmarker: React.FC<{ children: string }> = ({ children }) => {
         {`
       const currentTime = new Date(); // round trip time
       const fullTime = currentTime - window.performance.timing.requestStart;
-      console.log(\`THEO REPORTS\`, fullTime);
+      console.log(\`THEO REPORTS ON ${children}\`, fullTime);
       document.getElementById(\`overrideme\`).innerHTML = fullTime;
+      const times = JSON.parse(localStorage.getItem(\`${children}store\`)) ?? [];
+      times.push(fullTime);
+      localStorage.setItem(\`${children}store\`, JSON.stringify(times));
         `}
       </script>
     </div>
