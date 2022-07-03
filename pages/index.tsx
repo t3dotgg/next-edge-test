@@ -8,10 +8,10 @@ const Home: NextPage = () => {
         style={{ width: "64px", marginTop: "2rem" }}
         alt="svelte logo"
       />
-      <h1>Theo&apos;s Crappy Benchmark (NextJS On Vercel)</h1>
+      <h1>Theo&apos;s Crappy Vercel Runtimes Benchmark</h1>
       <h2>
         <a style={{ color: "blue", textDecoration: "underline" }} href="/edge">
-          Edge Version
+          NextJS Edge Version
         </a>
       </h2>
       <h2>
@@ -19,12 +19,20 @@ const Home: NextPage = () => {
           style={{ color: "blue", textDecoration: "underline" }}
           href="/lambda"
         >
-          Lambda Version
+          NextJS Lambda Version
         </a>
       </h2>
       <h2>
         <a style={{ color: "blue", textDecoration: "underline" }} href="/cache">
-          Cache/CDN Version
+          NextJS Cache/CDN Version
+        </a>
+      </h2>
+      <h2>
+        <a
+          style={{ color: "blue", textDecoration: "underline" }}
+          href="https://svelte-edge.vercel.app/"
+        >
+          Svelte Edge Version
         </a>
       </h2>
     </div>
