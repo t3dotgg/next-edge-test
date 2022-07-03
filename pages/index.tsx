@@ -9,6 +9,7 @@ const Home: NextPage = () => {
         alt="svelte logo"
       />
       <h1>Theo&apos;s Crappy Vercel Runtimes Benchmark</h1>
+      <h2>(Check console and refresh for timing history)</h2>
       <h2>
         <a style={{ color: "blue", textDecoration: "underline" }} href="/edge">
           NextJS Edge Version
