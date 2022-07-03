@@ -31,6 +31,14 @@ const Home: NextPage = () => {
           Svelte Edge Version
         </a>
       </h2>
+      <h2>
+        <a
+          style={{ color: "blue", textDecoration: "underline" }}
+          href="https://t3-fresh-test.deno.dev/"
+        >
+          Fresh + Deno Deploy Version
+        </a>
+      </h2>
     </div>
   );
 };
