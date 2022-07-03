@@ -43,4 +43,5 @@ export default Home;
 
 export const config = {
   unstable_runtimeJS: false,
+  unstable_JsPreload: false,
 };
