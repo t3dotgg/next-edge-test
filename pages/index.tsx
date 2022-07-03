@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -12,28 +11,22 @@ const Home: NextPage = () => {
       />
       <h1>Theo&apos;s Crappy Benchmark (NextJS On Vercel)</h1>
       <h2>
-        <Link
-          style={{ color: "blue", textDecoration: "underline" }}
-          href="/edge"
-        >
+        <a style={{ color: "blue", textDecoration: "underline" }} href="/edge">
           Edge Version
-        </Link>
+        </a>
       </h2>
       <h2>
-        <Link
+        <a
           style={{ color: "blue", textDecoration: "underline" }}
           href="/lambda"
         >
           Lambda Version
-        </Link>
+        </a>
       </h2>
       <h2>
-        <Link
-          style={{ color: "blue", textDecoration: "underline" }}
-          href="/cache"
-        >
+        <a style={{ color: "blue", textDecoration: "underline" }} href="/cache">
           Cache/CDN Version
-        </Link>
+        </a>
       </h2>
     </div>
   );
