@@ -1,9 +1,8 @@
 import type { NextPage } from "next";
-import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div style={{ padding: "4rem" }}>
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
         style={{ width: "64px", marginTop: "2rem" }}
