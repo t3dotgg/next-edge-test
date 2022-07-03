@@ -9,10 +9,10 @@ const Home: NextPage = () => {
         style={{ width: "64px", marginTop: "2rem" }}
         alt="svelte logo"
       />
-      <h1>Theo&nbsp;s Crappy Benchmark (NextJS On Vercel Edge)</h1>
+      <h1>Theo&apos;s Crappy Benchmark (NextJS On Vercel Edge)</h1>
       <h2>
         Next hates my inline script so times will show up ~1000ms after
-        they&nbsp;re calculated
+        they&apos;re calculated
       </h2>
 
       <h2>
