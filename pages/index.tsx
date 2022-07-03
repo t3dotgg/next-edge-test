@@ -9,35 +9,27 @@ const Home: NextPage = () => {
         style={{ width: "64px", marginTop: "2rem" }}
         alt="svelte logo"
       />
-      <h1>Theo&apos;s Crappy Benchmark (NextJS On Vercel Edge)</h1>
+      <h1>Theo&apos;s Crappy Benchmark (NextJS On Vercel)</h1>
       <h2>
-        Next hates my inline script so times will show up ~1000ms after
-        they&apos;re calculated
+        <a style={{ color: "blue", textDecoration: "underline" }} href="/edge">
+          Edge Version
+        </a>
       </h2>
-
       <h2>
-        <span>
-          Full request to render time (according to Theo):{" "}
-          <span id="overrideme" />
-          ms
-        </span>
+        <a
+          style={{ color: "blue", textDecoration: "underline" }}
+          href="/lambda"
+        >
+          Lambda Version
+        </a>
       </h2>
-      <script>
-        {`
-      const currentTime = new Date(); // round trip time
-      const fullTime = currentTime - window.performance.timing.requestStart;
-      console.log(\`THEO REPORTS\`, fullTime);
-      setTimeout(function() {
-        document.getElementById(\`overrideme\`).innerHTML = fullTime;
-      }, 1000);
-        `}
-      </script>
+      <h2>
+        <a style={{ color: "blue", textDecoration: "underline" }} href="/cache">
+          Cache/CDN Version
+        </a>
+      </h2>
     </div>
   );
 };
 
 export default Home;
-
-export const getServerSideProps = () => {
-  return { props: { message: new Date().toString() } };
-};
