@@ -24,6 +24,7 @@ export const Benchmarker: React.FC<{ children: string }> = ({ children }) => {
       const times = JSON.parse(localStorage.getItem(\`${children}store\`)) ?? [];
       times.push(fullTime);
       localStorage.setItem(\`${children}store\`, JSON.stringify(times));
+      console.table(times);
         `}
       </script>
     </div>
